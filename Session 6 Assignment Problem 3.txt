@@ -1,0 +1,26 @@
+#returns bonus based on code and years
+Module getBonus(code,years):
+   if(code == "A" and years>10):
+       return 10000
+   if(code == "A" and years>5):
+       return 8000
+   if(code == "B" and years>15):
+       return 9000
+   return 5000
+End Module
+
+DECLARE name,code,years
+
+PRINT ("Enter employee name: ")
+READ name
+
+PRINT("Enter employee code: ")
+READ code
+
+PRINT ("Enter years: ")
+READ years
+
+#finding the bonus
+bonus = getBonus(code,years)
+#printing the details
+PRINT(name," got ",bonus," bonus")

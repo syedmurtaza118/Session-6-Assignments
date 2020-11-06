@@ -1,0 +1,16 @@
+#returns the cost based on quantity
+Module getCost(q):
+   IF q>1000:
+       return 8
+   IF q>500:
+       return 10
+   return 12
+
+#reading quantity
+DECLARE Q,PRICE,TOTAL
+PRINT "Enter quantity:
+READ Q
+price = getCost(q)
+#finding the total
+total = price * q
+PRINT "Total price: $",total
